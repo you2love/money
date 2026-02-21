@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>经济学学习平台</title>
+    <title>经济学总览 - 经济学学习平台</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -18,16 +18,16 @@
                 <ul class="tree-root">
                     <!-- 总览 -->
                     <li class="tree-item">
-                        <a href="overview.html" class="tree-link">总览</a>
+                        <a href="overview.html" class="tree-link active">总览</a>
                     </li>
 
                     <!-- 经典经济学 -->
                     <li class="tree-item">
-                        <div class="tree-label">
-                            <span class="tree-toggle">▶</span>
+                        <div class="tree-label expanded">
+                            <span class="tree-toggle">▼</span>
                             <span class="tree-title">经典经济学</span>
                         </div>
-                        <ul class="tree-children">
+                        <ul class="tree-children expanded">
                             <li class="tree-item">
                                 <a href="micro.html" class="tree-link" data-page="micro">微观经济学</a>
                             </li>
@@ -121,45 +121,99 @@
 
         <!-- 右侧内容区域 -->
         <main class="main-content">
-            <section id="home" class="hero">
-                <h1>欢迎来到经济学学习平台</h1>
-                <p>探索经济学的奥秘，掌握分析现实世界的能力</p>
-                <div class="quick-links">
-                    <h3>快速开始</h3>
-                    <div class="link-grid">
-                        <a href="micro.html" class="quick-link">微观经济学</a>
-                        <a href="macro.html" class="quick-link">宏观经济学</a>
-                        <a href="dailylife.html" class="quick-link">日常生活经济学</a>
-                        <a href="calculator.html" class="quick-link">经济学计算器</a>
-                    </div>
+            <div class="course-page">
+                <div class="course-header">
+                    <h1>经济学总览</h1>
+                    <p>掌握经济学的整体框架与核心概念</p>
                 </div>
 
-                <div class="course-overview">
-                    <h3>课程概览</h3>
-                    <div class="overview-grid">
-                        <div class="overview-item">
-                            <h4>经典经济学</h4>
-                            <p>掌握经济学基础理论，包括微观、宏观、国际贸易等核心内容。</p>
-                            <span class="course-count">5门课程</span>
-                        </div>
-                        <div class="overview-item">
-                            <h4>现代经济学</h4>
-                            <p>了解数字经济、AI、绿色金融等前沿经济领域。</p>
-                            <span class="course-count">6门课程</span>
-                        </div>
-                        <div class="overview-item">
-                            <h4>日常生活</h4>
-                            <p>将经济学应用于日常生活，学习常见经济学规律。</p>
-                            <span class="course-count">2门课程</span>
-                        </div>
-                        <div class="overview-item">
-                            <h4>实用工具</h4>
-                            <p>使用经济学计算器，快速计算各项经济指标。</p>
-                            <span class="course-count">1个工具</span>
-                        </div>
-                    </div>
+                <div class="course-topics">
+                    <h2>什么是经济学？</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <h4>经济学的定义</h4>
+                            <p>经济学（Economics）是研究人类社会在各个发展阶段的各种经济活动和经济关系，研究如何有效配置稀缺资源以满足人们无限需求的社会科学。经济学本质上是一门研究<strong>选择</strong>的学科——在资源有限的情况下，个人、企业、政府如何做出最优决策。</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>经济学的核心问题</h4>
+                            <p><strong>生产什么（What）：</strong>社会应该生产哪些商品和服务<br>
+                            <strong>如何生产（How）：</strong>商品和服务应该用什么方法和资源来生产<br>
+                            <strong>为谁生产（For Whom）：</strong>生产的商品和服务在社会成员之间如何分配</p>
+                        </li>
+                    </ul>
+
+                    <h2>经济学的研究范围</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <h4>按研究层次划分</h4>
+                            <p><strong>微观经济学：</strong>研究单个经济主体的行为，如消费者、企业、市场等<br>
+                            <strong>宏观经济学：</strong>研究整个经济体系的运行，如GDP、通货膨胀、货币政策等</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>按研究领域划分</h4>
+                            <p><strong>理论经济学：</strong>经济学原理、数理经济学、计量经济学等<br>
+                            <strong>应用经济学：</strong>金融学、财政学、国际贸易、产业经济学等<br>
+                            <strong>经济史：</strong>研究经济发展历程和规律</p>
+                        </li>
+                    </ul>
+
+                    <h2>经济学的分支方向</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <h4>按研究对象</h4>
+                            <p>微观经济学、宏观经济学、中观经济学</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>按研究方法</h4>
+                            <p>理论经济学、计量经济学、实验经济学</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>按应用领域</h4>
+                            <p>金融经济学、公共经济学、国际经济学、产业经济学、劳动经济学、发展经济学</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>新兴交叉方向</h4>
+                            <p>行为经济学、数字经济学、绿色经济学、人工智能经济学</p>
+                        </li>
+                    </ul>
+
+                    <h2>高校经济学主要课程</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <h4>基础必修课</h4>
+                            <p>微观经济学原理、宏观经济学原理、高等数学、线性代数、概率论与数理统计、政治经济学</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>核心专业课</h4>
+                            <p>中级微观经济学、中级宏观经济学、计量经济学、国际金融、国际贸易、货币银行学、财政学</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>选修方向课</h4>
+                            <p>金融工程、公司金融、投资学、产业组织理论、劳动经济学、发展经济学、经济思想史</p>
+                        </li>
+                    </ul>
+
+                    <h2>经济学的学习方法</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <h4>理论联系实际</h4>
+                            <p>用经济学视角观察日常生活中的现象</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>数学工具</h4>
+                            <p>掌握微积分、概率统计等数学工具</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>案例分析</h4>
+                            <p>研究真实经济事件和案例</p>
+                        </li>
+                        <li class="topic-item">
+                            <h4>跨学科视野</h4>
+                            <p>了解社会学、心理学、哲学等相关学科</p>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
         </main>
     </div>
 
