@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A 股分析 - 经济学规律在 A 股中的应用</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>经济学学习平台</h2>
+            </div>
+            <nav class="tree-nav">
+                <ul class="tree-root">
+                    <!-- 总览 -->
+                    <li class="tree-item">
+                        <a href="index.html" class="tree-link">总览</a>
+                    </li>
+
+                    <!-- 微观经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">🔬 微观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="micro.html" class="tree-link" data-page="micro">消费者行为</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#producer" class="tree-link" data-page="micro">生产者行为</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#market" class="tree-link" data-page="micro">市场结构</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#factor" class="tree-link" data-page="micro">要素市场</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#welfare" class="tree-link" data-page="micro">福利经济学</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 宏观经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">📊 宏观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="macro.html" class="tree-link" data-page="macro">国民收入核算</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#growth" class="tree-link" data-page="macro">经济增长</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#cycle" class="tree-link" data-page="macro">经济周期</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#policy" class="tree-link" data-page="macro">宏观经济政策</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#international" class="tree-link" data-page="macro">开放经济</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 中观经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">🏭 中观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="meso.html" class="tree-link" data-page="meso">产业经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#regional" class="tree-link" data-page="meso">区域经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#institutional" class="tree-link" data-page="meso">制度经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#network" class="tree-link" data-page="meso">网络经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#cluster" class="tree-link" data-page="meso">集群与生态</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 扩展经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">📖 扩展经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="econhistory.html" class="tree-link" data-page="econhistory">经济史</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="international.html" class="tree-link" data-page="international">国际经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="econometrics.html" class="tree-link" data-page="econometrics">计量经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="digital.html" class="tree-link" data-page="digital">数字经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="ai.html" class="tree-link" data-page="ai">人工智能经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="green.html" class="tree-link" data-page="green">绿色经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="behavioral.html" class="tree-link" data-page="behavioral">行为经济学</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 工具与应用 -->
+                    <li class="tree-item">
+                        <div class="tree-label expanded">
+                            <span class="tree-toggle">▼</span>
+                            <span class="tree-title">🛠️ 工具与应用</span>
+                        </div>
+                        <ul class="tree-children expanded">
+                            <li class="tree-item">
+                                <a href="dailylife.html" class="tree-link" data-page="dailylife">日常生活经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="econlaws.html" class="tree-link" data-page="econlaws">常见经济学规律</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="thinking.html" class="tree-link" data-page="thinking">经济学思维案例</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="astock.html" class="tree-link active" data-page="astock">A 股分析</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 右侧内容区域 -->
+        <main class="main-content">
+            <div class="course-page">
+                <div class="course-header">
+                    <h1>📈 A 股分析</h1>
+                    <p>经济学规律在 A 股市场中的应用与分析</p>
+                </div>
+
+                <!-- 供需定律与股价 -->
+                <section class="content-module">
+                    <h2>一、供需定律与股价波动</h2>
+                    
+                    <h3>1.1 股票供需决定机制</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">市场信息</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">利好消息</div>
+                            <div class="flowchart-node" style="background:#ffebee;border-color:#f44336;">利空消息</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">需求增加 ↑</div>
+                            <div class="flowchart-node">需求减少 ↓</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">供给变化？</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">解禁/增发</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">回购/退市</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">均衡价格变动</div>
+                        </div>
+                    </div>
+
+                    <h3>1.2 A 股供需影响因素</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>因素类型</th>
+                                <th>具体因素</th>
+                                <th>影响方向</th>
+                                <th>2026 年案例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>需求侧</strong></td>
+                                <td>货币政策宽松</td>
+                                <td>需求↑ → 股价↑</td>
+                                <td>降准降息预期</td>
+                            </tr>
+                            <tr>
+                                <td><strong>需求侧</strong></td>
+                                <td>外资流入 (北向资金)</td>
+                                <td>需求↑ → 股价↑</td>
+                                <td>MSCI 扩容</td>
+                            </tr>
+                            <tr>
+                                <td><strong>需求侧</strong></td>
+                                <td>散户情绪</td>
+                                <td>羊群效应放大波动</td>
+                                <td>题材炒作</td>
+                            </tr>
+                            <tr>
+                                <td><strong>供给侧</strong></td>
+                                <td>IPO 节奏</td>
+                                <td>供给↑ → 股价↓</td>
+                                <td>注册制全面实施</td>
+                            </tr>
+                            <tr>
+                                <td><strong>供给侧</strong></td>
+                                <td>限售股解禁</td>
+                                <td>供给↑ → 股价↓</td>
+                                <td>大股东减持</td>
+                            </tr>
+                            <tr>
+                                <td><strong>供给侧</strong></td>
+                                <td>股票回购</td>
+                                <td>供给↓ → 股价↑</td>
+                                <td>上市公司回购潮</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h4>💡 A 股供需特点</h4>
+                        <p><strong>政策市特征：</strong>监管政策对 IPO 节奏、交易规则影响显著<br>
+                        <strong>散户主导：</strong>个人投资者占比高，情绪波动大，羊群效应明显<br>
+                        <strong>资金驱动：</strong>流动性对股价影响大于基本面，"水牛"行情常见<br>
+                        <strong>结构性分化：</strong>存量博弈下，板块轮动快，结构性行情为主<br><br>
+                        <strong>2026 年新变化：</strong>机构化加速、外资占比提升、注册制常态化、退市机制完善</p>
+                    </div>
+                </section>
+
+                <!-- 经济周期与板块轮动 -->
+                <section class="content-module">
+                    <h2>二、经济周期与板块轮动</h2>
+                    
+                    <h3>2.1 美林时钟在 A 股的应用</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">经济数据</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">增长 + 通胀组合</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">复苏 (↑GDP ↓CPI)</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">过热 (↑GDP ↑CPI)</div>
+                        </div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#ffebee;border-color:#f44336;">滞胀 (↓GDP ↑CPI)</div>
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">衰退 (↓GDP ↓CPI)</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">股票</div>
+                            <div class="flowchart-node">大宗商品</div>
+                            <div class="flowchart-node">现金</div>
+                            <div class="flowchart-node">债券</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">资产配置决策</div>
+                        </div>
+                    </div>
+
+                    <h3>2.2 A 股板块轮动规律</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>周期阶段</th>
+                                <th>经济特征</th>
+                                <th>优势板块</th>
+                                <th>逻辑</th>
+                                <th>2026 年表现</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>复苏期</strong></td>
+                                <td>GDP↑ CPI↓</td>
+                                <td>金融、可选消费</td>
+                                <td>信贷扩张、需求回暖</td>
+                                <td>券商、地产链</td>
+                            </tr>
+                            <tr>
+                                <td><strong>过热期</strong></td>
+                                <td>GDP↑ CPI↑</td>
+                                <td>周期、资源品</td>
+                                <td>通胀上行、商品涨价</td>
+                                <td>有色、煤炭、石油</td>
+                            </tr>
+                            <tr>
+                                <td><strong>滞胀期</strong></td>
+                                <td>GDP↓ CPI↑</td>
+                                <td>现金为王</td>
+                                <td>增长放缓、成本高企</td>
+                                <td>防御性板块</td>
+                            </tr>
+                            <tr>
+                                <td><strong>衰退期</strong></td>
+                                <td>GDP↓ CPI↓</td>
+                                <td>债券、必选消费</td>
+                                <td>政策宽松预期</td>
+                                <td>医药、公用事业</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h4>💡 2026 年 A 股主线</h4>
+                        <p><strong>科技自立：</strong>半导体、AI、信创、工业母机——国产替代逻辑<br>
+                        <strong>绿色转型：</strong>新能源、储能、电动车、碳中和——双碳目标驱动<br>
+                        <strong>消费复苏：</strong>白酒、医美、免税、旅游——疫后修复 + 消费升级<br>
+                        <strong>高股息：</strong>银行、煤炭、电信——低利率环境下配置价值<br>
+                        <strong>中特估：</strong>央企国企估值重塑——政策催化 + 分红提升</p>
+                    </div>
+                </section>
+
+                <!-- 行为金融与 A 股 -->
+                <section class="content-module">
+                    <h2>三、行为金融与 A 股特征</h2>
+                    
+                    <h3>3.1 A 股投资者行为偏差</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">市场信号</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">投资者类型</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">散户 (80%)</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">机构 (20%)</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">追涨杀跌</div>
+                            <div class="flowchart-node">价值投资</div>
+                        </div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">题材炒作</div>
+                            <div class="flowchart-node">基本面分析</div>
+                        </div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">频繁交易</div>
+                            <div class="flowchart-node">长期持有</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">市场高波动</div>
+                        </div>
+                    </div>
+
+                    <h3>3.2 A 股特有现象的经济学解释</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>现象</th>
+                                <th>行为金融解释</th>
+                                <th>经济学原理</th>
+                                <th>投资策略</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>炒新炒小</strong></td>
+                                <td>过度自信、可得性偏差</td>
+                                <td>投机偏好、彩票效应</td>
+                                <td>回避、反向</td>
+                            </tr>
+                            <tr>
+                                <td><strong>壳资源炒作</td>
+                                <td>锚定效应、赌重组</td>
+                                <td>借壳上市制度套利</td>
+                                <td>注册制下回避</td>
+                            </tr>
+                            <tr>
+                                <td><strong>高送转行情</td>
+                                <td>货币幻觉、框架效应</td>
+                                <td>数字游戏无实质价值</td>
+                                <td>理性看待</td>
+                            </tr>
+                            <tr>
+                                <td><strong>年报季效应</td></td>
+                                <td>注意力驱动</td>
+                                <td>信息集中披露</td>
+                                <td>提前布局绩优</td>
+                            </tr>
+                            <tr>
+                                <td><strong>春节效应</td></td>
+                                <td>日历效应、流动性</td>
+                                <td>节前资金面紧张</td>
+                                <td>节后布局</td>
+                            </tr>
+                            <tr>
+                                <td><strong>政策市</td></td>
+                                <td>羊群效应、权威偏误</td>
+                                <td>政策影响资源配置</td>
+                                <td>紧跟政策导向</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>✅ A 股投资机会</h4>
+                            <ul>
+                                <li><strong>政策红利：</strong>产业政策支持方向</li>
+                                <li><strong>成长赛道：</strong>新能源、半导体、AI</li>
+                                <li><strong>估值修复：</strong>低估值蓝筹、中特估</li>
+                                <li><strong>高股息：</strong>稳定分红、防御配置</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card con">
+                            <h4>❌ A 股投资风险</h4>
+                            <ul>
+                                <li><strong>政策风险：</strong>监管政策变化</li>
+                                <li><strong>流动性风险：</strong>资金面收紧</li>
+                                <li><strong>退市风险：</strong>注册制下优胜劣汰</li>
+                                <li><strong>情绪风险：</strong>羊群效应放大波动</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <h4>⚠️ 2026 年 A 股关键变量</h4>
+                        <p><strong>美联储政策：</strong>降息周期开启，外部压力缓解，利好新兴市场<br>
+                        <strong>国内政策：</strong>稳增长政策力度、房地产政策效果、财政发力<br>
+                        <strong>盈利修复：</strong>企业盈利增速回升，估值业绩匹配<br>
+                        <strong>资金面：</strong>北向资金流向、两融余额、新基金发行<br>
+                        <strong>制度改革：</strong>全面注册制、退市常态化、分红制度完善<br>
+                        <strong>地缘政治：</strong>中美关系、台海局势、全球供应链重构</p>
+                    </div>
+                </section>
+
+                <!-- 估值与投资 -->
+                <section class="content-module">
+                    <h2>四、估值方法与投资策略</h2>
+                    
+                    <h3>4.1 常用估值指标对比</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>公式</th>
+                                <th>适用场景</th>
+                                <th>局限</th>
+                                <th>2026 年中位数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PE (市盈率)</strong></td>
+                                <td>股价/每股收益</td>
+                                <td>盈利稳定企业</td>
+                                <td>周期股失真</td>
+                                <td>沪深 300: 12x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PB (市净率)</strong></td>
+                                <td>股价/每股净资产</td>
+                                <td>重资产、周期股</td>
+                                <td>轻资产不适用</td>
+                                <td>沪深 300: 1.3x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PS (市销率)</strong></td>
+                                <td>市值/营业收入</td>
+                                <td>未盈利成长股</td>
+                                <td>忽略利润率</td>
+                                <td>科创板：8x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PEG</strong></td>
+                                <td>PE/盈利增速</td>
+                                <td>成长股估值</td>
+                                <td>增速预测不准</td>
+                                <td>合理值：1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>股息率</strong></td>
+                                <td>分红/市值</td>
+                                <td>价值股、防御</td>
+                                <td>成长股偏低</td>
+                                <td>沪深 300: 2.5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>4.2 2026 年 A 股投资策略</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>📈 进攻策略</h4>
+                            <ul>
+                                <li><strong>科技成长：</strong>AI 应用、半导体、人形机器人</li>
+                                <li><strong>新能源：</strong>储能、氢能、固态电池</li>
+                                <li><strong>医药创新：</strong>创新药、医疗器械、CXO</li>
+                                <li><strong>顺周期：</strong>券商、有色、化工（经济复苏）</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>🛡️ 防御策略</h4>
+                            <ul>
+                                <li><strong>高股息：</strong>银行、煤炭、电信、电力</li>
+                                <li><strong>必选消费：</strong>白酒、调味品、乳制品</li>
+                                <li><strong>公用事业：</strong>水务、燃气、高速公路</li>
+                                <li><strong>黄金：</strong>避险资产、抗通胀</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h4>💡 A 股投资核心原则</h4>
+                        <p><strong>1. 顺势而为：</strong>紧跟政策导向和产业趋势，不要与趋势作对<br>
+                        <strong>2. 估值安全：</strong>好公司也要好价格，避免高位接盘<br>
+                        <strong>3. 分散配置：</strong>行业分散、风格分散，降低单一风险<br>
+                        <strong>4. 长期主义：</strong>减少频繁交易，分享企业成长红利<br>
+                        <strong>5. 逆向思维：</strong>别人贪婪我恐惧，别人恐惧我贪婪<br>
+                        <strong>6. 能力圈：</strong>投资自己理解的行业和公司，不熟不做</p>
+                    </div>
+                </section>
+
+                <!-- 实战案例 -->
+                <section class="content-module">
+                    <h2>五、实战案例分析</h2>
+                    
+                    <h3>5.1 典型牛股经济学逻辑</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>股票</th>
+                                <th>时间段</th>
+                                <th>涨幅</th>
+                                <th>驱动因素</th>
+                                <th>经济学原理</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>贵州茅台</strong></td>
+                                <td>2016-2021</td>
+                                <td>+500%</td>
+                                <td>消费升级、品牌溢价</td>
+                                <td>供需失衡、定价权</td>
+                            </tr>
+                            <tr>
+                                <td><strong>宁德时代</strong></td>
+                                <td>2019-2021</td>
+                                <td>+800%</td>
+                                <td>电动车爆发、全球份额</td>
+                                <td>产业趋势、规模效应</td>
+                            </tr>
+                            <tr>
+                                <td><strong>比亚迪</strong></td>
+                                <td>2020-2022</td>
+                                <td>+600%</td>
+                                <td>新能源转型、垂直整合</td>
+                                <td>竞争优势、成本领先</td>
+                            </tr>
+                            <tr>
+                                <td><strong>中际旭创</strong></td>
+                                <td>2023-2024</td>
+                                <td>+400%</td>
+                                <td>AI 算力、光模块需求</td>
+                                <td>技术革命、需求爆发</td>
+                            </tr>
+                            <tr>
+                                <td><strong>中国中车</strong></td>
+                                <td>2014-2015</td>
+                                <td>+500%</td>
+                                <td>高铁出海、南北车合并</td>
+                                <td>政策催化、垄断溢价</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>5.2 典型熊市经济学分析</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">触发因素</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#ffebee;border-color:#f44336;">外部冲击</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">内部问题</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">贸易摩擦</div>
+                            <div class="flowchart-node">杠杆过高</div>
+                        </div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">疫情冲击</div>
+                            <div class="flowchart-node">政策收紧</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">信心崩溃</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">抛售潮</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">市场底部</div>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h4>💡 A 股历史底部特征</h4>
+                        <p><strong>估值极低：</strong>沪深 300PE&lt;10x、PB&lt;1.2x，历史底部区域<br>
+                        <strong>情绪冰点：</strong>成交量萎缩、新基金发行困难、散户离场<br>
+                        <strong>政策底：</strong>监管层密集发声、政策利好频出、国家队入场<br>
+                        <strong>市场底：</strong>估值底 + 政策底 + 情绪底共振，右侧信号出现<br><br>
+                        <strong>2026 年位置判断：</strong>估值处于历史中低位，政策友好，情绪修复中，结构性机会为主</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
