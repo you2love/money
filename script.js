@@ -183,28 +183,6 @@ function calculateMultiplier() {
          平衡预算乘数：1`;
 }
 
-function calculateUtility() {
-    const x = parseFloat(document.getElementById('good-x').value);
-    const y = parseFloat(document.getElementById('good-y').value);
-    const alpha = parseFloat(document.getElementById('alpha').value) || 0.5;
-
-    if (isNaN(x) || isNaN(y) || x < 0 || y < 0) {
-        document.getElementById('utility-result').innerHTML = '请输入有效的商品数量（非负数）';
-        return;
-    }
-
-    // Cobb-Douglas 效用函数 U = x^α * y^(1-α)
-    const utility = Math.pow(x, alpha) * Math.pow(y, 1 - alpha);
-    const muX = alpha * Math.pow(x, alpha - 1) * Math.pow(y, 1 - alpha);
-    const muY = (1 - alpha) * Math.pow(x, alpha) * Math.pow(y, -alpha);
-
-    document.getElementById('utility-result').innerHTML =
-        `效用值 U: ${utility.toFixed(4)}<br>
-         商品 X 的边际效用 MUx: ${muX.toFixed(4)}<br>
-         商品 Y 的边际效用 MUy: ${muY.toFixed(4)}<br>
-         边际替代率 MRS: ${(muX / muY).toFixed(4)}`;
-}
-
 function calculateCrypto() {
     const initialInvestment = parseFloat(document.getElementById('crypto-initial').value);
     const startPrice = parseFloat(document.getElementById('crypto-start-price').value);

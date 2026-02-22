@@ -169,25 +169,7 @@
                         <p>随着消费者对某种商品消费量的增加，每增加一单位该商品所带来的额外满足感（边际效用）会逐渐减少。这就是为什么第一杯水最解渴，后面的水杯效用递减。</p>
                     </div>
 
-                    <h3>1.3 效用函数计算器</h3>
-                    <div class="calculator-panel active">
-                        <div class="input-group">
-                            <label>商品 X 数量:</label>
-                            <input type="number" id="good-x" placeholder="例如：5" min="0">
-                        </div>
-                        <div class="input-group">
-                            <label>商品 Y 数量:</label>
-                            <input type="number" id="good-y" placeholder="例如：10" min="0">
-                        </div>
-                        <div class="input-group">
-                            <label>偏好参数 α (0-1):</label>
-                            <input type="number" id="alpha" placeholder="例如：0.5" min="0" max="1" step="0.1" value="0.5">
-                        </div>
-                        <button class="calculate-btn" onclick="calculateUtility()">计算效用</button>
-                        <div id="utility-result" class="result"></div>
-                    </div>
-
-                    <h3>1.4 需求定律</h3>
+                    <h3>1.3 需求定律</h3>
                     <table class="data-table highlight-first">
                         <thead>
                             <tr>
@@ -212,6 +194,39 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h4>⚠️ 因果关系辨析：谁是因，谁是果？</h4>
+                        <p><strong>正确理解：</strong> 在需求定律中，<strong>价格是自变量（因）</strong>，<strong>需求量是因变量（果）</strong>。价格变化导致需求量变化，而不是相反。</p>
+                    </div>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>✅ 正确理解</h4>
+                            <ul>
+                                <li><strong>因→果：</strong>价格变化 → 需求量变化</li>
+                                <li>需求曲线表示：在每一价格水平下，消费者<strong>愿意且能够</strong>购买的数量</li>
+                                <li>这是<strong>沿需求曲线的移动</strong></li>
+                                <li>例：苹果涨价，你少买——价格是原因</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card con">
+                            <h4>❌ 常见误解</h4>
+                            <ul>
+                                <li><strong>误解 1：</strong>"需求量增加导致价格上涨"——混淆了需求与供给</li>
+                                <li><strong>误解 2：</strong>"价格随需求量变化"——因果倒置</li>
+                                <li><strong>误解 3：</strong>将"需求变化"与"需求量变化"混为一谈</li>
+                                <li>例：误以为"买的人多了所以涨价"是需求定律——这实际是供求均衡的结果</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h4>💡 关键区分：需求变化 vs 需求量变化</h4>
+                        <p><strong>需求量变化：</strong>价格变动引起，表现为<strong>沿同一条需求曲线的移动</strong>（因→果）<br>
+                        <strong>需求变化：</strong>非价格因素（收入、偏好、预期等）引起，表现为<strong>整条需求曲线的平移</strong><br><br>
+                        <strong>注意：</strong>"买的人多了所以涨价"描述的是<strong>需求增加（曲线右移）导致均衡价格上涨</strong>，这是供求模型的结果，不是需求定律本身。需求定律只说明：给定一条需求曲线，价格越高，需求量越低。</p>
+                    </div>
                 </section>
 
                 <!-- 生产者行为 -->
