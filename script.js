@@ -152,20 +152,6 @@ function calculateCPI() {
          通货膨胀率：${inflationRate.toFixed(2)}%`;
 }
 
-function calculateGDP() {
-    const C = parseFloat(document.getElementById('consumption').value) || 0;
-    const I = parseFloat(document.getElementById('investment').value) || 0;
-    const G = parseFloat(document.getElementById('government').value) || 0;
-    const NX = parseFloat(document.getElementById('net-export').value) || 0;
-
-    const gdp = C + I + G + NX;
-
-    document.getElementById('gdp-result').innerHTML =
-        `GDP = C + I + G + NX<br>
-         GDP = ${C} + ${I} + ${G} + ${NX}<br>
-         GDP = ${gdp.toFixed(2)}`;
-}
-
 function calculateMultiplier() {
     const mpc = parseFloat(document.getElementById('mpc').value);
 
