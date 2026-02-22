@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>思维改造 - 像经济学家一样思考</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>经济学学习平台</h2>
+            </div>
+            <nav class="tree-nav">
+                <ul class="tree-root">
+                    <!-- 总览 -->
+                    <li class="tree-item">
+                        <a href="index.html" class="tree-link">总览</a>
+                    </li>
+
+                    <!-- 微观经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">🔬 微观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="micro.html" class="tree-link" data-page="micro">消费者行为</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#producer" class="tree-link" data-page="micro">生产者行为</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#market" class="tree-link" data-page="micro">市场结构</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#factor" class="tree-link" data-page="micro">要素市场</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#welfare" class="tree-link" data-page="micro">福利经济学</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 宏观经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">📊 宏观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="macro.html" class="tree-link" data-page="macro">国民收入核算</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#growth" class="tree-link" data-page="macro">经济增长</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#cycle" class="tree-link" data-page="macro">经济周期</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#policy" class="tree-link" data-page="macro">宏观经济政策</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#international" class="tree-link" data-page="macro">开放经济</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 中观经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">🏭 中观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="meso.html" class="tree-link" data-page="meso">产业经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#regional" class="tree-link" data-page="meso">区域经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#institutional" class="tree-link" data-page="meso">制度经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#network" class="tree-link" data-page="meso">网络经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="meso.html#cluster" class="tree-link" data-page="meso">集群与生态</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 扩展经济学 -->
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">📖 扩展经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="econhistory.html" class="tree-link" data-page="econhistory">经济史</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="international.html" class="tree-link" data-page="international">国际经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="econometrics.html" class="tree-link" data-page="econometrics">计量经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="digital.html" class="tree-link" data-page="digital">数字经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="ai.html" class="tree-link" data-page="ai">人工智能经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="green.html" class="tree-link" data-page="green">绿色经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="behavioral.html" class="tree-link" data-page="behavioral">行为经济学</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 工具与应用 -->
+                    <li class="tree-item">
+                        <div class="tree-label expanded">
+                            <span class="tree-toggle">▼</span>
+                            <span class="tree-title">🛠️ 工具与应用</span>
+                        </div>
+                        <ul class="tree-children expanded">
+                            <li class="tree-item">
+                                <a href="dailylife.html" class="tree-link" data-page="dailylife">日常生活经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="econlaws.html" class="tree-link" data-page="econlaws">常见经济学规律</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="thinking.html" class="tree-link" data-page="thinking">经济学思维案例</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="astock.html" class="tree-link" data-page="astock">A 股分析</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="rethinking.html" class="tree-link active" data-page="rethinking">思维改造</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 右侧内容区域 -->
+        <main class="main-content">
+            <div class="course-page">
+                <div class="course-header">
+                    <h1>🧠 思维改造</h1>
+                    <p>像经济学家一样思考：用经济学规律指导生活与决策</p>
+                </div>
+
+                <!-- 为什么要学经济学思维 -->
+                <section class="content-module">
+                    <h2>一、为什么要学习经济学思维？</h2>
+                    
+                    <h3>1.1 经济学思维的价值</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">学习经济学</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">理解世界运行规律</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">思维转变</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">理性决策</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">识别陷阱</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">长远眼光</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">更好的生活选择</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">人生质量提升</div>
+                        </div>
+                    </div>
+
+                    <h3>1.2 经济学思维 vs 常识思维</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>场景</th>
+                                <th>常识思维</th>
+                                <th>经济学思维</th>
+                                <th>结果差异</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>打折促销</strong></td>
+                                <td>"好便宜，买买买"</td>
+                                <td>考虑机会成本和真实需求</td>
+                                <td>避免冲动消费</td>
+                            </tr>
+                            <tr>
+                                <td><strong>排队现象</strong></td>
+                                <td>"这么多人，肯定好"</td>
+                                <td>计算时间成本和信号价值</td>
+                                <td>理性判断是否值得</td>
+                            </tr>
+                            <tr>
+                                <td><strong>投资理财</strong></td>
+                                <td>"追涨杀跌"</td>
+                                <td>风险收益权衡、分散配置</td>
+                                <td>长期稳健收益</td>
+                            </tr>
+                            <tr>
+                                <td><strong>职业选择</strong></td>
+                                <td>"哪个工资高选哪个"</td>
+                                <td>考虑人力资本投资和长期发展</td>
+                                <td>更优职业路径</td>
+                            </tr>
+                            <tr>
+                                <td><strong>婚姻决策</strong></td>
+                                <td>"感觉对了就结婚"</td>
+                                <td>考虑机会成本和匹配效率</td>
+                                <td>更稳定的关系</td>
+                            </tr>
+                            <tr>
+                                <td><strong>政策评价</strong></td>
+                                <td>"初衷是好的"</td>
+                                <td>分析激励和 unintended consequences</td>
+                                <td>更客观的判断</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h4>💡 经济学思维的核心价值</h4>
+                        <p><strong>1. 看透本质：</strong>不被表面现象迷惑，理解背后的激励和约束<br>
+                        <strong>2. 理性决策：</strong>基于成本收益分析，而非情绪和直觉<br>
+                        <strong>3. 长远眼光：</strong>考虑长期后果，避免短视行为<br>
+                        <strong>4. 识别陷阱：</strong>看穿营销套路和政策幻觉<br>
+                        <strong>5. 资源优化：</strong>在稀缺约束下做出最优选择<br><br>
+                        <strong>经济学不是关于金钱的学问，而是关于选择的智慧。</strong></p>
+                    </div>
+                </section>
+
+                <!-- 经济学思维核心原则 -->
+                <section class="content-module">
+                    <h2>二、经济学思维的核心原则</h2>
+                    
+                    <h3>2.1 十大经济学思维原则</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">面临选择</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">应用思维原则</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">机会成本</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">边际分析</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">激励响应</div>
+                        </div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#f3e5f5;border-color:#9c27b0;">权衡取舍</div>
+                            <div class="flowchart-node" style="background:#e0f7fa;border-color:#00bcd4;">比较优势</div>
+                            <div class="flowchart-node" style="background:#fce4ec;border-color:#e91e63;">长远眼光</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">理性分析</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">更优决策</div>
+                        </div>
+                    </div>
+
+                    <h3>2.2 核心原则详解</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>原则</th>
+                                <th>核心问题</th>
+                                <th>生活应用</th>
+                                <th>思维练习</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. 权衡取舍</strong></td>
+                                <td>得到什么？失去什么？</td>
+                                <td>工作 vs 生活、消费 vs 储蓄</td>
+                                <td>列出每个选择的得失清单</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. 机会成本</strong></td>
+                                <td>放弃的最佳选择是什么？</td>
+                                <td>时间分配、投资决策</td>
+                                <td>问自己"如果不做这个，会做什么"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. 边际分析</strong></td>
+                                <td>多做一单位的收益 vs 成本？</td>
+                                <td>学习时长、消费数量</td>
+                                <td>问"再多一点值得吗"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. 激励响应</strong></td>
+                                <td>人们会如何反应？</td>
+                                <td>政策评价、管理设计</td>
+                                <td>分析各方的利益和动机</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5. 比较优势</strong></td>
+                                <td>我相对擅长什么？</td>
+                                <td>职业选择、分工合作</td>
+                                <td>找到自己的相对优势领域</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6. 长远眼光</strong></td>
+                                <td>长期后果是什么？</td>
+                                <td>教育投资、健康管理</td>
+                                <td>想象 10 年后的自己会怎么看</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>✅ 经济学思维的好处</h4>
+                            <ul>
+                                <li><strong>少犯错误：</strong>识别常见决策陷阱</li>
+                                <li><strong>更理性：</strong>减少情绪化决策</li>
+                                <li><strong>更高效：</strong>优化资源配置</li>
+                                <li><strong>更从容：</strong>理解世界运行规律</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card con">
+                            <h4>⚠️ 经济学思维的局限</h4>
+                            <ul>
+                                <li><strong>不是万能：</strong>情感、道德也重要</li>
+                                <li><strong>信息要求：</strong>需要充分信息才能分析</li>
+                                <li><strong>过度理性：</strong>可能忽视人性复杂</li>
+                                <li><strong>计算成本：</strong>事事分析可能疲惫</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h4>💡 如何培养经济学思维</h4>
+                        <p><strong>1. 多问"为什么"：</strong>现象背后的激励和约束是什么<br>
+                        <strong>2. 考虑反事实：</strong>如果不这样，会怎样<br>
+                        <strong>3. 看二阶效应：</strong>不仅看直接后果，也看间接后果<br>
+                        <strong>4. 量化思考：</strong>尽可能用数字和概率表达<br>
+                        <strong>5. 复盘决策：</strong>记录决策过程和结果，持续改进<br>
+                        <strong>6. 跨学科学习：</strong>结合心理学、历史学等视角</p>
+                    </div>
+                </section>
+
+                <!-- 用经济学规律指导生活 -->
+                <section class="content-module">
+                    <h2>三、用经济学规律指导生活</h2>
+                    
+                    <h3>3.1 生活决策的经济学框架</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">生活问题</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">问题类型</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">消费决策</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">投资决策</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">职业决策</div>
+                        </div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#f3e5f5;border-color:#9c27b0;">关系决策</div>
+                            <div class="flowchart-node" style="background:#e0f7fa;border-color:#00bcd4;">健康决策</div>
+                            <div class="flowchart-node" style="background:#fce4ec;border-color:#e91e63;">学习决策</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">应用经济学原理</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">更优选择</div>
+                        </div>
+                    </div>
+
+                    <h3>3.2 生活场景应用指南</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>生活场景</th>
+                                <th>适用原理</th>
+                                <th>思维方法</th>
+                                <th>行动建议</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>购物消费</strong></td>
+                                <td>边际效用递减、锚定效应</td>
+                                <td>问"真的需要吗"</td>
+                                <td>列清单、设预算、冷静期</td>
+                            </tr>
+                            <tr>
+                                <td><strong>时间管理</strong></td>
+                                <td>机会成本、比较优势</td>
+                                <td>时间价值计算</td>
+                                <td>优先高价值任务、学会外包</td>
+                            </tr>
+                            <tr>
+                                <td><strong>投资理财</strong></td>
+                                <td>风险收益权衡、分散化</td>
+                                <td>长期复利思维</td>
+                                <td>资产配置、定期定额、长期持有</td>
+                            </tr>
+                            <tr>
+                                <td><strong>职业发展</strong></td>
+                                <td>人力资本投资、信号理论</td>
+                                <td>长期职业规划</td>
+                                <td>持续学习、积累可转移技能</td>
+                            </tr>
+                            <tr>
+                                <td><strong>人际关系</strong></td>
+                                <td>重复博弈、互惠原则</td>
+                                <td>长期关系思维</td>
+                                <td>诚信为本、互利共赢</td>
+                            </tr>
+                            <tr>
+                                <td><strong>健康管理</strong></td>
+                                <td>跨期选择、预防优于治疗</td>
+                                <td>未来自我关怀</td>
+                                <td>规律作息、适度运动、定期体检</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>3.3 日常思维练习</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>📝 每日思维练习</h4>
+                            <ul>
+                                <li><strong>晨间规划：</strong>今天的时间机会成本是什么</li>
+                                <li><strong>消费前：</strong>问"没有促销会买吗"</li>
+                                <li><strong>决策时：</strong>列出至少 3 个备选方案</li>
+                                <li><strong>晚间复盘：</strong>今天的选择理性吗</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>📊 每周思维练习</h4>
+                            <ul>
+                                <li><strong>支出分析：</strong>钱花在哪里，值不值</li>
+                                <li><strong>时间审计：</strong>时间花在哪里，产出如何</li>
+                                <li><strong>信息筛选：</strong>信息来源可靠吗</li>
+                                <li><strong>目标检视：</strong>长期目标有进展吗</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <h4>⚠️ 常见思维误区与纠正</h4>
+                        <p><strong>误区 1："免费的就是好的"</strong> → 纠正：免费的最贵，考虑时间和注意力成本<br>
+                        <strong>误区 2："已经花了这么多，不能放弃"</strong> → 纠正：沉没成本不应影响决策<br>
+                        <strong>误区 3："大家都买，肯定没错"</strong> → 纠正：羊群效应可能导致集体错误<br>
+                        <strong>误区 4："这个以后用得到"</strong> → 纠正：考虑存储成本和实际使用概率<br>
+                        <strong>误区 5："努力工作就会成功"</strong> → 纠正:方向比努力重要，考虑比较优势</p>
+                    </div>
+                </section>
+
+                <!-- 成为更好的决策者 -->
+                <section class="content-module">
+                    <h2>四、成为更好的决策者</h2>
+                    
+                    <h3>4.1 决策质量提升路径</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">当前状态</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">直觉决策</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">学习经济学思维</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">刻意练习</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">分析框架</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">决策清单</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">复盘习惯</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">理性决策</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">更好的人生</div>
+                        </div>
+                    </div>
+
+                    <h3>4.2 决策检查清单</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>决策阶段</th>
+                                <th>检查问题</th>
+                                <th>经济学原理</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>问题定义</strong></td>
+                                <td>真正的问题是什么</td>
+                                <td>正确定义问题</td>
+                            </tr>
+                            <tr>
+                                <td><strong>信息收集</strong></td>
+                                <td>信息充分吗？可靠吗</td>
+                                <td>信息经济学</td>
+                            </tr>
+                            <tr>
+                                <td><strong>方案生成</strong></td>
+                                <td>有至少 3 个备选方案吗</td>
+                                <td>选择集扩大</td>
+                            </tr>
+                            <tr>
+                                <td><strong>成本分析</strong></td>
+                                <td>机会成本考虑了吗</td>
+                                <td>机会成本原理</td>
+                            </tr>
+                            <tr>
+                                <td><strong>收益分析</strong></td>
+                                <td>边际收益大于边际成本吗</td>
+                                <td>边际分析</td>
+                            </tr>
+                            <tr>
+                                <td><strong>风险评估</strong></td>
+                                <td>最坏情况是什么</td>
+                                <td>期望效用理论</td>
+                            </tr>
+                            <tr>
+                                <td><strong>长远考虑</strong></td>
+                                <td>10 年后会怎么看这个决定</td>
+                                <td>跨期选择</td>
+                            </tr>
+                            <tr>
+                                <td><strong>决策执行</strong></td>
+                                <td>有承诺机制吗</td>
+                                <td>时间不一致性</td>
+                            </tr>
+                            <tr>
+                                <td><strong>结果复盘</strong></td>
+                                <td>决策过程对吗（不仅看结果）</td>
+                                <td>决策质量 vs 结果</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h4>💡 经济学思维的人生价值</h4>
+                        <p><strong>对个人：</strong>更理性的决策、更少的后悔、更高的人生效率<br>
+                        <strong>对家庭：</strong>更好的资源配置、更和谐的关系、更明智的教育投资<br>
+                        <strong>对工作：</strong>更清晰的职业定位、更有效的沟通、更好的管理决策<br>
+                        <strong>对社会：</strong>更客观的政策评价、更理性的公共讨论、更好的公民素养<br><br>
+                        <strong>经济学思维不是让你变得冷漠算计，而是让你活得更清醒、更从容、更有质量。</strong></p>
+                    </div>
+
+                    <h3>4.3 推荐阅读书单</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>书籍</th>
+                                <th>作者</th>
+                                <th>核心价值</th>
+                                <th>难度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>《经济学的思维方式》</td>
+                                <td>保罗·海恩</td>
+                                <td>经济学思维入门经典</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>《魔鬼经济学》</td>
+                                <td>列维特</td>
+                                <td>用经济学看世界</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>《思考，快与慢》</td>
+                                <td>卡尼曼</td>
+                                <td>理解决策心理</td>
+                                <td>⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>《助推》</td>
+                                <td>泰勒</td>
+                                <td>行为经济学应用</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>《穷查理宝典》</td>
+                                <td>芒格</td>
+                                <td>多元思维模型</td>
+                                <td>⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>《原则》</td>
+                                <td>达利欧</td>
+                                <td>决策系统构建</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
