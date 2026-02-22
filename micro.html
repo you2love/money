@@ -801,14 +801,121 @@
                 <!-- 福利经济学 -->
                 <section id="welfare" class="content-module">
                     <h2>五、福利经济学基础</h2>
-                    
+
                     <h3>5.1 帕累托效率</h3>
                     <div class="knowledge-card">
                         <h4>💡 帕累托最优 (Pareto Optimality)</h4>
                         <p>一种资源配置状态，在这种状态下，不可能通过重新配置资源使得至少一个人的状况变好而不使任何人的状况变坏。这是评价经济效率的重要标准。</p>
                     </div>
 
-                    <h3>5.2 市场失灵的原因</h3>
+                    <h3>5.2 帕累托最优的现实表现</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>场景</th>
+                                <th>帕累托改进</th>
+                                <th>帕累托最优</th>
+                                <th>非帕累托最优</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>分蛋糕</strong></td>
+                                <td>蛋糕还没分完，继续分给某人</td>
+                                <td>蛋糕全部分完，无法再让一人多得而不让他人少得</td>
+                                <td>蛋糕有剩余但没人能再得到</td>
+                            </tr>
+                            <tr>
+                                <td><strong>二手交易</strong></td>
+                                <td>买卖双方自愿交易，都获益</td>
+                                <td>所有互利的交易都已完成</td>
+                                <td>存在未实现的互利交易机会</td>
+                            </tr>
+                            <tr>
+                                <td><strong>工作时间</strong></td>
+                                <td>员工愿意加班，雇主愿意付薪</td>
+                                <td>工资率=劳动边际产出，无法再调整</td>
+                                <td>存在失业或过度工作</td>
+                            </tr>
+                            <tr>
+                                <td><strong>碳排放</strong></td>
+                                <td>减排成本低的企业多减排，成本高的少减排</td>
+                                <td>各企业边际减排成本相等</td>
+                                <td>减排成本不同却统一标准</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <h4>💡 帕累托改进 vs 帕累托最优</h4>
+                        <p><strong>帕累托改进：</strong>至少一人变好，无人变坏——这是<strong>过程</strong><br>
+                        <strong>帕累托最优：</strong>无法再进行帕累托改进——这是<strong>终点</strong><br>
+                        <strong>关键理解：</strong>帕累托最优可能有无数个，且<strong>不涉及公平</strong>。一个极度不平等的社会也可能是帕累托最优的。</p>
+                    </div>
+
+                    <h3>5.3 如何达到帕累托最优</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">初始配置</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">存在帕累托改进？</div>
+                        </div>
+                        <div class="flowchart-arrow">↓ 是</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">自愿交易</div>
+                            <div class="flowchart-node">资源流动</div>
+                            <div class="flowchart-node">价格调整</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node decision">还存在改进空间？</div>
+                        </div>
+                        <div class="flowchart-arrow">↓ 否</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">帕累托最优</div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>✅ 达到最优的条件</h4>
+                            <ul>
+                                <li><strong>完全竞争市场</strong>：无数买家卖家，产品同质</li>
+                                <li><strong>信息完全</strong>：所有人知道所有信息</li>
+                                <li><strong>无外部性</strong>：私人成本=社会成本</li>
+                                <li><strong>交易成本为零</strong>：自由交易无摩擦</li>
+                                <li><strong>产权清晰</strong>：资源归属明确</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card con">
+                            <h4>❌ 现实中的障碍</h4>
+                            <ul>
+                                <li><strong>垄断势力</strong>：大企业操纵价格</li>
+                                <li><strong>信息不对称</strong>：买家不如卖家懂行</li>
+                                <li><strong>外部性</strong>：污染者不付成本</li>
+                                <li><strong>交易成本</strong>：谈判、执行都有成本</li>
+                                <li><strong>公共物品</strong>：搭便车问题</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="knowledge-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h4>⚠️ 谁希望帕累托最优？谁不希望？</h4>
+                        <p><strong>希望最优的群体：</strong><br>
+                        ✓ <strong>消费者</strong>：希望资源有效配置，价格反映真实成本<br>
+                        ✓ <strong>效率导向的企业</strong>：希望在公平竞争中胜出<br>
+                        ✓ <strong>自由市场主义者</strong>：相信市场能自动达到最优<br>
+                        ✓ <strong>整体社会福利</strong>：总剩余最大化<br><br>
+                        <strong>不希望最优的群体：</strong><br>
+                        ✗ <strong>垄断者</strong>：希望维持市场势力，获取超额利润<br>
+                        ✗ <strong>寻租者</strong>：希望维持特权和管制，获取租金<br>
+                        ✗ <strong>既得利益者</strong>：希望维持现状，反对重新配置<br>
+                        ✗ <strong>公平优先者</strong>：认为帕累托最优可能极度不平等</p>
+                    </div>
+
+                    <h3>5.4 市场失灵的原因</h3>
                     <div class="comparison-grid">
                         <div class="comparison-card con">
                             <h4>垄断</h4>
