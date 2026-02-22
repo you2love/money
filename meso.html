@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中观经济学 - 经济学学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>经济学学习平台</h2>
+            </div>
+            <nav class="tree-nav">
+                <ul class="tree-root">
+                    <li class="tree-item">
+                        <a href="index.html" class="tree-link">🏠 首页</a>
+                    </li>
+
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">🔬 微观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="micro.html" class="tree-link">消费者行为</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#producer" class="tree-link">生产者行为</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="micro.html#market" class="tree-link">市场结构</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">📊 宏观经济学</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="macro.html" class="tree-link">国民收入核算</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#growth" class="tree-link">经济增长</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="macro.html#cycle" class="tree-link">经济周期</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tree-item">
+                        <div class="tree-label expanded">
+                            <span class="tree-toggle">▼</span>
+                            <span class="tree-title">🏭 中观经济学</span>
+                        </div>
+                        <ul class="tree-children expanded">
+                            <li class="tree-item">
+                                <a href="#industry" class="tree-link active">产业经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="#regional" class="tree-link">区域经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="#institutional" class="tree-link">制度经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="#network" class="tree-link">网络经济学</a>
+                            </li>
+                            <li class="tree-item">
+                                <a href="#cluster" class="tree-link">集群与生态</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tree-item">
+                        <div class="tree-label">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-title">🛠️ 工具与应用</span>
+                        </div>
+                        <ul class="tree-children">
+                            <li class="tree-item">
+                                <a href="calculator.html" class="tree-link">经济学计算器</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 右侧内容区域 -->
+        <main class="main-content">
+            <div class="course-page">
+                <div class="course-header meso">
+                    <h1>🏭 中观经济学</h1>
+                    <p>研究产业与区域经济结构，连接微观与宏观的桥梁</p>
+                </div>
+
+                <!-- 产业经济学 -->
+                <section id="industry" class="content-module">
+                    <h2>一、产业经济学</h2>
+                    
+                    <h3>1.1 产业结构演变流程图</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">经济发展</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">第一产业主导</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">农业、林业、渔业</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">第二产业崛起</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">工业、制造业</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">第三产业主导</div>
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">服务业、金融业</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">第四产业兴起</div>
+                            <div class="flowchart-node" style="background:#f3e5f5;border-color:#9c27b0;">信息产业、知识经济</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">现代化经济</div>
+                        </div>
+                    </div>
+
+                    <h3>1.2 产业分类与特征</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>产业类型</th>
+                                <th>主要行业</th>
+                                <th>就业占比趋势</th>
+                                <th>GDP 贡献趋势</th>
+                                <th>典型国家</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>第一产业</strong></td>
+                                <td>农业、林业、牧业、渔业</td>
+                                <td>下降 ↓</td>
+                                <td>下降 ↓</td>
+                                <td>发展中国家</td>
+                            </tr>
+                            <tr>
+                                <td><strong>第二产业</strong></td>
+                                <td>制造业、建筑业、采矿业</td>
+                                <td>先升后降</td>
+                                <td>先升后降</td>
+                                <td>新兴工业化国家</td>
+                            </tr>
+                            <tr>
+                                <td><strong>第三产业</strong></td>
+                                <td>商业、金融、教育、医疗</td>
+                                <td>上升 ↑</td>
+                                <td>上升 ↑</td>
+                                <td>发达国家</td>
+                            </tr>
+                            <tr>
+                                <td><strong>第四产业</strong></td>
+                                <td>信息技术、研发、咨询</td>
+                                <td>快速上升 ↑↑</td>
+                                <td>快速上升 ↑↑</td>
+                                <td>美国、以色列</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>1.3 产业组织 SCP 范式</h3>
+                    <div class="knowledge-card">
+                        <h4>💡 SCP 分析框架</h4>
+                        <p><strong>结构 (Structure)</strong> → <strong>行为 (Conduct)</strong> → <strong>绩效 (Performance)</strong><br><br>
+                        市场结构决定企业行为，企业行为决定市场绩效。这是产业组织理论的核心分析框架，用于分析市场竞争程度、企业策略和经济效率之间的关系。</p>
+                    </div>
+
+                    <h3>1.4 市场集中度指标</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>计算公式</th>
+                                <th>取值范围</th>
+                                <th>判断标准</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>行业集中度 (CRn)</td>
+                                <td>前 n 家企业市场份额之和</td>
+                                <td>0-100%</td>
+                                <td>CR4>75% 为高集中度</td>
+                            </tr>
+                            <tr>
+                                <td>赫芬达尔指数 (HHI)</td>
+                                <td>各企业市场份额平方和</td>
+                                <td>0-10000</td>
+                                <td>HHI>2500 为高集中度</td>
+                            </tr>
+                            <tr>
+                                <td>洛伦兹曲线</td>
+                                <td>累积市场份额分布</td>
+                                <td>图形</td>
+                                <td>曲线越弯曲集中度越高</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- 区域经济学 -->
+                <section id="regional" class="content-module">
+                    <h2>二、区域经济学</h2>
+                    
+                    <h3>2.1 区域经济发展阶段</h3>
+                    <div class="sequence-chart">
+                        <div class="sequence-timeline">
+                            <div class="sequence-line"></div>
+                            <div class="sequence-point">
+                                <div class="sequence-label">
+                                    传统社会
+                                    <div class="sequence-title">农业为主</div>
+                                </div>
+                            </div>
+                            <div class="sequence-point">
+                                <div class="sequence-label">
+                                    起飞准备
+                                    <div class="sequence-title">基础设施</div>
+                                </div>
+                            </div>
+                            <div class="sequence-point">
+                                <div class="sequence-label">
+                                    起飞阶段
+                                    <div class="sequence-title">工业化</div>
+                                </div>
+                            </div>
+                            <div class="sequence-point">
+                                <div class="sequence-label">
+                                    成熟阶段
+                                    <div class="sequence-title">多元化</div>
+                                </div>
+                            </div>
+                            <div class="sequence-point">
+                                <div class="sequence-label">
+                                    高消费阶段
+                                    <div class="sequence-title">服务业主导</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>2.2 区域经济差异指标</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>含义</th>
+                                <th>计算方法</th>
+                                <th>政策含义</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>区位商 (LQ)</td>
+                                <td>某产业在区域内的专业化程度</td>
+                                <td>(区域产业就业/区域总就业)/(全国产业就业/全国总就业)</td>
+                                <td>LQ>1 表示专业化</td>
+                            </tr>
+                            <tr>
+                                <td>锡尔指数</td>
+                                <td>区域不平等程度</td>
+                                <td>基于熵的分解方法</td>
+                                <td>可分解为组内和组间差异</td>
+                            </tr>
+                            <tr>
+                                <td>变异系数</td>
+                                <td>区域发展离散程度</td>
+                                <td>标准差/均值</td>
+                                <td>值越大差异越大</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>2.3 产业集群类型</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>马歇尔式集群</h4>
+                            <ul>
+                                <li>中小企业集聚</li>
+                                <li>专业化分工</li>
+                                <li>知识溢出效应</li>
+                                <li>意大利产业区典型</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>轮轴式集群</h4>
+                            <ul>
+                                <li>核心大企业主导</li>
+                                <li>供应链配套</li>
+                                <li>垂直一体化</li>
+                                <li>汽车产业典型</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>卫星平台式</h4>
+                            <ul>
+                                <li>外资企业主导</li>
+                                <li>出口加工区</li>
+                                <li>政策驱动</li>
+                                <li>东亚模式典型</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 制度经济学 -->
+                <section id="institutional" class="content-module">
+                    <h2>三、制度经济学</h2>
+                    
+                    <h3>3.1 制度构成要素</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">制度体系</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">正式制度</div>
+                            <div class="flowchart-node">非正式制度</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">宪法法律</div>
+                            <div class="flowchart-node">产权制度</div>
+                            <div class="flowchart-node">习俗惯例</div>
+                            <div class="flowchart-node">道德规范</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">经济绩效</div>
+                        </div>
+                    </div>
+
+                    <h3>3.2 交易成本分类</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>成本类型</th>
+                                <th>定义</th>
+                                <th>示例</th>
+                                <th>降低方式</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>搜寻成本</td>
+                                <td>寻找交易对象的成本</td>
+                                <td>市场调研、广告</td>
+                                <td>信息平台、中介</td>
+                            </tr>
+                            <tr>
+                                <td>谈判成本</td>
+                                <td>达成交易协议的成本</td>
+                                <td>律师费、时间成本</td>
+                                <td>标准合同、信任</td>
+                            </tr>
+                            <tr>
+                                <td>执行成本</td>
+                                <td>监督和执行合约的成本</td>
+                                <td>监督、诉讼</td>
+                                <td>法律体系、声誉</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="knowledge-card">
+                        <h4>💡 科斯定理</h4>
+                        <p>在交易成本为零的情况下，无论初始产权如何配置，当事人通过协商总能达到资源配置的帕累托最优。但现实中交易成本不为零，因此产权界定和制度设计至关重要。</p>
+                    </div>
+
+                    <h3>3.3 制度变迁模式</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>诱致性变迁</h4>
+                            <ul>
+                                <li>自下而上</li>
+                                <li>需求驱动</li>
+                                <li>渐进式</li>
+                                <li>中国农村改革</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>强制性变迁</h4>
+                            <ul>
+                                <li>自上而下</li>
+                                <li>政府主导</li>
+                                <li>激进式</li>
+                                <li>休克疗法</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 网络经济学 -->
+                <section id="network" class="content-module">
+                    <h2>四、网络经济学</h2>
+                    
+                    <h3>4.1 网络效应类型</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>效应类型</th>
+                                <th>定义</th>
+                                <th>典型案例</th>
+                                <th>特征</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>直接网络效应</td>
+                                <td>用户数量增加直接提升价值</td>
+                                <td>电话网络、社交媒体</td>
+                                <td>梅特卡夫定律</td>
+                            </tr>
+                            <tr>
+                                <td>间接网络效应</td>
+                                <td>互补品数量增加提升价值</td>
+                                <td>操作系统与应用软件</td>
+                                <td>双边市场</td>
+                            </tr>
+                            <tr>
+                                <td>数据网络效应</td>
+                                <td>用户数据改善服务质量</td>
+                                <td>搜索引擎、推荐系统</td>
+                                <td>AI 驱动</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>4.2 平台经济商业模式</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node start">平台</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">供给侧</div>
+                            <div class="flowchart-arrow" style="display:inline-block;transform:rotate(90deg);">→</div>
+                            <div class="flowchart-node" style="background:#f8f9fa;border-color:#6c757d;">平台匹配</div>
+                            <div class="flowchart-arrow" style="display:inline-block;transform:rotate(90deg);">→</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">需求侧</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">网络效应增强</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">赢家通吃</div>
+                        </div>
+                    </div>
+
+                    <h3>4.3 数字经济特征</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-card pro">
+                            <h4>边际成本趋零</h4>
+                            <ul>
+                                <li>数字产品复制成本低</li>
+                                <li>规模经济显著</li>
+                                <li>免费模式可行</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>长尾效应</h4>
+                            <ul>
+                                <li>小众市场可盈利</li>
+                                <li>推荐系统助力</li>
+                                <li>库存成本降低</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card pro">
+                            <h4>锁定效应</h4>
+                            <ul>
+                                <li>转换成本高</li>
+                                <li>用户粘性增强</li>
+                                <li>生态系统竞争</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 集群与生态 -->
+                <section id="cluster" class="content-module">
+                    <h2>五、产业集群与创新生态</h2>
+                    
+                    <h3>5.1 创新生态系统构成</h3>
+                    <div class="flowchart">
+                        <div class="flowchart-row">
+                            <div class="flowchart-node" style="background:#e3f2fd;border-color:#2196f3;">企业</div>
+                            <div class="flowchart-node" style="background:#e8f5e9;border-color:#4caf50;">大学</div>
+                            <div class="flowchart-node" style="background:#fff3e0;border-color:#ff9800;">研究机构</div>
+                            <div class="flowchart-node" style="background:#f3e5f5;border-color:#9c27b0;">政府</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node">知识流动</div>
+                            <div class="flowchart-node">人才流动</div>
+                            <div class="flowchart-node">资金流动</div>
+                        </div>
+                        <div class="flowchart-arrow">↓</div>
+                        <div class="flowchart-row">
+                            <div class="flowchart-node end">协同创新</div>
+                        </div>
+                    </div>
+
+                    <h3>5.2 世界著名产业集群</h3>
+                    <table class="data-table highlight-first">
+                        <thead>
+                            <tr>
+                                <th>集群名称</th>
+                                <th>地理位置</th>
+                                <th>主导产业</th>
+                                <th>成功因素</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>硅谷</td>
+                                <td>美国加州</td>
+                                <td>信息技术、互联网</td>
+                                <td>风险投资、斯坦福大学、创业文化</td>
+                            </tr>
+                            <tr>
+                                <td>中关村</td>
+                                <td>中国北京</td>
+                                <td>互联网、人工智能</td>
+                                <td>高校资源、政策支持、人才集聚</td>
+                            </tr>
+                            <tr>
+                                <td>第三意大利</td>
+                                <td>意大利北部</td>
+                                <td>时尚、机械</td>
+                                <td>中小企业网络、工匠精神、设计创新</td>
+                            </tr>
+                            <tr>
+                                <td>班加罗尔</td>
+                                <td>印度</td>
+                                <td>软件服务、IT 外包</td>
+                                <td>英语优势、工程师红利、成本优势</td>
+                            </tr>
+                            <tr>
+                                <td>深圳</td>
+                                <td>中国广东</td>
+                                <td>电子制造、硬件创新</td>
+                                <td>供应链完善、创业环境、政策支持</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>5.3 产业集群竞争优势</h3>
+                    <div class="knowledge-card">
+                        <h4>💡 波特钻石模型</h4>
+                        <p>产业集群的竞争优势来自四个关键要素的相互作用：<br>
+                        ① <strong>生产要素</strong>：人力资源、自然资源、知识资源<br>
+                        ② <strong>需求条件</strong>：国内市场需求的规模和质量<br>
+                        ③ <strong>相关产业</strong>：上下游产业的支持<br>
+                        ④ <strong>企业战略</strong>：企业组织结构和竞争战略<br>
+                        <br>
+                        加上<strong>政府</strong>和<strong>机遇</strong>两个辅助因素，构成完整的钻石模型。</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
