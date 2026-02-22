@@ -152,23 +152,6 @@ function calculateCPI() {
          通货膨胀率：${inflationRate.toFixed(2)}%`;
 }
 
-function calculateMultiplier() {
-    const mpc = parseFloat(document.getElementById('mpc').value);
-
-    if (isNaN(mpc) || mpc <= 0 || mpc >= 1) {
-        document.getElementById('multiplier-result').innerHTML = '请输入有效的边际消费倾向（0 < MPC < 1）';
-        return;
-    }
-
-    const multiplier = 1 / (1 - mpc);
-    const taxMultiplier = -mpc / (1 - mpc);
-
-    document.getElementById('multiplier-result').innerHTML =
-        `投资乘数：${multiplier.toFixed(4)}<br>
-         税收乘数：${taxMultiplier.toFixed(4)}<br>
-         平衡预算乘数：1`;
-}
-
 function calculateCrypto() {
     const initialInvestment = parseFloat(document.getElementById('crypto-initial').value);
     const startPrice = parseFloat(document.getElementById('crypto-start-price').value);
